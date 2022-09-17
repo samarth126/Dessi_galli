@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Tillana&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script type=”text/javascript” src=”https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js”></script>
+  <link
+    href=”https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css”
+    rel=”stylesheet”>
+  <script
+    src=”https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js”> </script>
+  <title>Desi Galli</title>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en', includedLanguages: 'en,es,pl,pt,zh-CN,ca',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <style type="text/css">
+    /* OVERRIDE GOOGLE TRANSLATE WIDGET CSS BEGIN */
+    div#google_translate_element div.goog-te-gadget-simple {
+      border: aquamarine;
+      background-color: black;
+      font-size: 15px;
+      color: whitesmoke;
+      padding: auto;
+      
+      
+      /*background-color: #17548d;*/
+      /*#e3e3ff*/
+    }
+  
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value:hover {
+      text-decoration: none;
+    }
+  
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span {
+      color:whitesmoke;
+    }
+  
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover {
+      color: rgb(255, 230, 6);
+    }
+  
+    .goog-te-gadget-icon {
+      display: none !important;
+      /*background: url("url for the icon") 0 0 no-repeat !important;*/
+    }
+  
+    /* Remove the down arrow */
+    /* when dropdown open */
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(213, 213, 213);"] {
+      display: none;
+    }
+  
+    /* after clicked/touched */
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(118, 118, 118);"] {
+      display: none;
+    }
+  
+    /* on page load (not yet touched or clicked) */
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(155, 155, 155);"] {
+      display: none;
+    }
+  
+    /* Remove span with left border line | (next to the arrow) in Chrome & Firefox */
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="border-left: 1px solid rgb(187, 187, 187);"] {
+      display: none;
+    }
+  
+    /* Remove span with left border line | (next to the arrow) in Edge & IE11 */
+    div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="border-left-color: rgb(187, 187, 187); border-left-width: 1px; border-left-style: solid;"] {
+      display: none;
+    }
+  
+    /* HIDE the google translate toolbar */
+    .goog-te-banner-frame.skiptranslate {
+      display: none !important;
+    }
+  
+    body {
+      top: 0px !important;
+    }
+  
+    /* OVERRIDE GOOGLE TRANSLATE WIDGET CSS END */
+  </style>
+</head>
+
+<body>
+  <div id="google_translate_element"></div>
+  
+    <script>
+      $('document').ready(function () {
+        $('#google_translate_element').on("click", function () {
+
+          // Change font family and color
+          $("iframe").contents().find(".goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div") //, .goog-te-menu2 *
+            .css({
+              'color': red,
+              'background-color': '#e3e3ff',
+              'font-family': '"Open Sans",Helvetica,Arial,sans-serif'
+            });
+
+          // Change hover effects  #e3e3ff = white
+          $("iframe").contents().find(".goog-te-menu2-item div").hover(function () {
+            $(this).css('background-color', '#17548d').find('span.text').css('color', '#e3e3ff');
+          }, function () {
+            $(this).css('background-color', '#e3e3ff').find('span.text').css('color', '#544F4B');
+          });
+
+          // Change Google's default blue border
+          $("iframe").contents().find('.goog-te-menu2').css('border', '1px solid #17548d');
+
+          $("iframe").contents().find('.goog-te-menu2').css('background-color', '#e3e3ff');
+
+          // Change the iframe's box shadow
+          $(".goog-te-menu-frame").css({
+            '-moz-box-shadow': '0 3px 8px 2px #666666',
+            '-webkit-box-shadow': '0 3px 8px 2px #666',
+            'box-shadow': '0 3px 8px 2px #666'
+          });
+        });
+      });
+    </script>
+
+
+  <a href="https://api.whatsapp.com/send?phone=34610495854&text=Hello,%20welcome%20to%20Desi Galli%20,%20How%20can%20we%20help%20you%20today%20"
+    class="float" target="_blank">
+    <i class="fa-brands fa-whatsapp my-float"></i>
+  </a>
+
+
+
+
+
+
+
+
+  <!-- loader  -->
+
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root" class="main-layout"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <!-- <script type="text/javascript">
+    
+      $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+          theme: "minimal",
+        });
+
+        $("#dismiss, .overlay").on("click", function () {
+          $("#sidebar").removeClass("active");
+          $(".overlay").removeClass("active");
+        });
+
+        $("#sidebarCollapse").on("click", function () {
+          $("#sidebar").addClass("active");
+          $(".overlay").addClass("active");
+          $(".collapse.in").toggleClass("in");
+          $("a[aria-expanded=true]").attr("aria-expanded", "true");
+        });
+      });
+    </script> -->
+
+  <style>
+    #owl-demo .item {
+      margin: 3px;
+    }
+
+    #owl-demo .item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+
+  <script>
+    $(document).ready(function () {
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        items: 1,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    });
+  </script>
+
+ 
+</body>
+
+</html>
